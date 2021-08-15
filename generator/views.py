@@ -3,8 +3,10 @@ from django.http import HttpResponse
 import random
 def home(request):
     return render(request, 'generator/home.html')
+
 def about(request):
     return render(request, 'generator/about.html')
+    
 def password(request):
     password=''
     char=list('abcdefghijklmnopqrstuvwxyz')
@@ -17,4 +19,4 @@ def password(request):
     len=int(request.GET.get('length'))
     for i in range(len):
         password+=random.choice(char)
-    return render(request, 'generator/password.html',{'pass':password})
+    return render(request, 'generator/home.html',{'pass':password})

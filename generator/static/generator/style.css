@@ -1,0 +1,99 @@
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  background-color: #444444e0;
+}
+
+a {
+  color: #e43c5c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ea6981;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: "Nunito", sans-serif;
+}
+hr{
+  margin-top: 0;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ------------------------------------------------------ */
+
+.container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.content{
+  margin: auto;
+  width: 150px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+h2 {
+  color: rgba(238, 238, 238, 0.658);
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.password {
+  margin: 10px 10px ;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px 8px 30px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  background-color: rgb(165, 34, 34);
+  color: #fff;
+  transition: 0.01s;
+}
+
+.btn:hover {
+  background: #e43c5c;
+  border: 2px solid #e43c5c;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
